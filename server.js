@@ -12,10 +12,10 @@ const knex = require('knex')({
   }
 });
 
-const register = require('./register.js');
-const signin = require('./signin.js');
-const profile = require('./profile.js');
-const image = require('./image.js');
+const register = require('./Containers/register');
+const signin = require('./Containers/signin');
+const profile = require('./Containers/profile');
+const image = require('./Containers/image');
 
 const app = express();
 
