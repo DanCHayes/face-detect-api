@@ -5,10 +5,8 @@ const cors = require('cors');
 const knex = require('knex')({
 	client: 'pg',
   connection: {
-    host : 'postgresql-closed-15879',
-    user : 'danielhayes',
-    password : '',
-    database : 'face-detect'
+    connectionString : process.env.DATABASE_URL,
+    ssl: true
   }
 });
 
